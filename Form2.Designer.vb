@@ -30,6 +30,11 @@ Partial Class Form2
         Me.lblAvrPe = New System.Windows.Forms.Label()
         Me.lblAvrMath = New System.Windows.Forms.Label()
         Me.lblCheck = New System.Windows.Forms.Label()
+        Me.lblNumEng = New System.Windows.Forms.Label()
+        Me.lblNumPe = New System.Windows.Forms.Label()
+        Me.lblNumMath = New System.Windows.Forms.Label()
+        Me.btnStuAvr = New System.Windows.Forms.Button()
+        Me.lblStudAvr = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnAverageEng
@@ -62,16 +67,17 @@ Partial Class Form2
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Location = New System.Drawing.Point(327, 46)
+        Me.lblTitle.Font = New System.Drawing.Font("Source Code Pro Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Location = New System.Drawing.Point(229, 48)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(125, 13)
+        Me.lblTitle.Size = New System.Drawing.Size(324, 27)
         Me.lblTitle.TabIndex = 3
         Me.lblTitle.Text = "Class Average Calculator"
         '
         'lblAvrEng
         '
         Me.lblAvrEng.AutoSize = True
-        Me.lblAvrEng.Location = New System.Drawing.Point(131, 232)
+        Me.lblAvrEng.Location = New System.Drawing.Point(125, 232)
         Me.lblAvrEng.Name = "lblAvrEng"
         Me.lblAvrEng.Size = New System.Drawing.Size(78, 13)
         Me.lblAvrEng.TabIndex = 4
@@ -98,17 +104,67 @@ Partial Class Form2
         'lblCheck
         '
         Me.lblCheck.AutoSize = True
-        Me.lblCheck.Location = New System.Drawing.Point(648, 368)
+        Me.lblCheck.Location = New System.Drawing.Point(596, 380)
         Me.lblCheck.Name = "lblCheck"
         Me.lblCheck.Size = New System.Drawing.Size(39, 13)
         Me.lblCheck.TabIndex = 7
         Me.lblCheck.Text = "Label2"
+        '
+        'lblNumEng
+        '
+        Me.lblNumEng.AutoSize = True
+        Me.lblNumEng.Location = New System.Drawing.Point(125, 289)
+        Me.lblNumEng.Name = "lblNumEng"
+        Me.lblNumEng.Size = New System.Drawing.Size(77, 13)
+        Me.lblNumEng.TabIndex = 8
+        Me.lblNumEng.Text = "Class Numbers"
+        '
+        'lblNumPe
+        '
+        Me.lblNumPe.AutoSize = True
+        Me.lblNumPe.Location = New System.Drawing.Point(333, 289)
+        Me.lblNumPe.Name = "lblNumPe"
+        Me.lblNumPe.Size = New System.Drawing.Size(77, 13)
+        Me.lblNumPe.TabIndex = 9
+        Me.lblNumPe.Text = "Class Numbers"
+        '
+        'lblNumMath
+        '
+        Me.lblNumMath.AutoSize = True
+        Me.lblNumMath.Location = New System.Drawing.Point(558, 289)
+        Me.lblNumMath.Name = "lblNumMath"
+        Me.lblNumMath.Size = New System.Drawing.Size(77, 13)
+        Me.lblNumMath.TabIndex = 10
+        Me.lblNumMath.Text = "Class Numbers"
+        '
+        'btnStuAvr
+        '
+        Me.btnStuAvr.Location = New System.Drawing.Point(167, 350)
+        Me.btnStuAvr.Name = "btnStuAvr"
+        Me.btnStuAvr.Size = New System.Drawing.Size(105, 51)
+        Me.btnStuAvr.TabIndex = 11
+        Me.btnStuAvr.Text = "Student Average"
+        Me.btnStuAvr.UseVisualStyleBackColor = True
+        '
+        'lblStudAvr
+        '
+        Me.lblStudAvr.AutoSize = True
+        Me.lblStudAvr.Location = New System.Drawing.Point(321, 369)
+        Me.lblStudAvr.Name = "lblStudAvr"
+        Me.lblStudAvr.Size = New System.Drawing.Size(84, 13)
+        Me.lblStudAvr.TabIndex = 12
+        Me.lblStudAvr.Text = "student average"
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblStudAvr)
+        Me.Controls.Add(Me.btnStuAvr)
+        Me.Controls.Add(Me.lblNumMath)
+        Me.Controls.Add(Me.lblNumPe)
+        Me.Controls.Add(Me.lblNumEng)
         Me.Controls.Add(Me.lblCheck)
         Me.Controls.Add(Me.lblAvrMath)
         Me.Controls.Add(Me.lblAvrPe)
@@ -118,7 +174,7 @@ Partial Class Form2
         Me.Controls.Add(Me.btnAverageMath)
         Me.Controls.Add(Me.btnAverageEng)
         Me.Name = "Form2"
-        Me.Text = "Form2"
+        Me.Text = "Part B"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -132,4 +188,9 @@ Partial Class Form2
     Friend WithEvents lblAvrPe As Label
     Friend WithEvents lblAvrMath As Label
     Friend WithEvents lblCheck As Label
+    Friend WithEvents lblNumEng As Label
+    Friend WithEvents lblNumPe As Label
+    Friend WithEvents lblNumMath As Label
+    Friend WithEvents btnStuAvr As Button
+    Friend WithEvents lblStudAvr As Label
 End Class
