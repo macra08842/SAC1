@@ -45,6 +45,7 @@ Partial Class Form1
         Me.lblEngNum = New System.Windows.Forms.Label()
         Me.lblMathNum = New System.Windows.Forms.Label()
         Me.lblPENum = New System.Windows.Forms.Label()
+        Me.btnForm2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'tbxName
@@ -246,11 +247,21 @@ Partial Class Form1
         Me.lblPENum.TabIndex = 23
         Me.lblPENum.Text = "PE class numbers:"
         '
+        'btnForm2
+        '
+        Me.btnForm2.Location = New System.Drawing.Point(612, 380)
+        Me.btnForm2.Name = "btnForm2"
+        Me.btnForm2.Size = New System.Drawing.Size(122, 39)
+        Me.btnForm2.TabIndex = 24
+        Me.btnForm2.Text = "Part 2 - Averages"
+        Me.btnForm2.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnForm2)
         Me.Controls.Add(Me.lblPENum)
         Me.Controls.Add(Me.lblMathNum)
         Me.Controls.Add(Me.lblEngNum)
@@ -304,4 +315,5 @@ Partial Class Form1
     Friend WithEvents lblEngNum As Label
     Friend WithEvents lblMathNum As Label
     Friend WithEvents lblPENum As Label
+    Friend WithEvents btnForm2 As Button
 End Class
