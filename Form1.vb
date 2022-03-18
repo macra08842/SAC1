@@ -92,4 +92,9 @@
         Me.Hide()
         Form2.Show()
     End Sub
+
+    Private Sub btnPart3_Click(sender As Object, e As EventArgs) Handles btnPart3.Click
+        Me.Hide()
+        Form3.Show()
+    End Sub
 End Class
