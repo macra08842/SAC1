@@ -97,4 +97,9 @@
         Me.Hide()
         Form3.Show()
     End Sub
+
+    Private Sub lblForm4_Click(sender As Object, e As EventArgs) Handles lblForm4.Click
+        Me.Hide()
+        Form4.Show()
+    End Sub
 End Class
